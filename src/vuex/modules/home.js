@@ -1,16 +1,13 @@
-import {
-	HOME_FETCH_ALL_LIST
-} from '../mutation-types'
-
+import * as types from '../mutation-types.js';
 
 import * as actions from '../actions/home.js';
 
 const state = {
-		homeList:[],
+	homeList:[],
 }
 
 const mutations = {
-	[HOME_FETCH_ALL_LIST] (state, dataList) {
+	[types.HOME_FETCH_ALL_LIST] (state, dataList) {
 		state.homeList = dataList;
 	}
 }
